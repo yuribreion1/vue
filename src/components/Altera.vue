@@ -1,12 +1,12 @@
 <template>
     <div>
         <button v-on:click="decrementar">Decrementar</button>
-        <p>{{ numero }}</p>
+        <p :class="campo">{{ numero }}</p>
         <button v-on:click="incrementar">Incrementar</button>
     </div>
 </template>
 
-<script>
+<script scoped>
 export default {
     data(){
         return {
@@ -24,10 +24,20 @@ export default {
         incrementar() {
             this.numero = this.numero + 1;
         } 
+    }, 
+    computed: {
+        campo(){
+            return this.numero > 0 ? "positivo" : "negativo";
+        }
     }
 }
 </script>
 
 <style>
-
+    .positivo {
+        color: blue;
+    }
+    .negativo {
+        color: red;
+    }
 </style>
