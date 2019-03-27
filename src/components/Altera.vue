@@ -1,8 +1,13 @@
-<template>
-    <div>
-        <button v-on:click="decrementar">Decrementar</button>
+<template class="uk-container">
+    <div class="uk-container">
+        <!-- Passando um valor direto usando v-model, pega de data -->
+        <input type="text" v-model="nome">
+        <br>
+
+        <!-- Criando botões que ao clicar chamam o metodo definido no script -->
+        <button class="uk-button uk-button-default" v-on:click="decrementar">Decrementar</button>
         <p :class="campo">{{ numero }}</p>
-        <button v-on:click="incrementar">Incrementar</button>
+        <button class="uk-button uk-button-default" v-on:click="incrementar">Incrementar</button>
     </div>
 </template>
 
@@ -10,7 +15,8 @@
 export default {
     data(){
         return {
-            numero: 0
+            numero: 0,
+            nome: "Yuri Breion"
         }
     }, 
     methods: {
