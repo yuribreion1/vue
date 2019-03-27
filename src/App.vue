@@ -2,16 +2,25 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Mensagem msg="Aqui é a minha propriedade"/>
+    <Youtube url="https://player.vimeo.com/video/322667805"/>
+    <Arquivo/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Mensagem from './components/Mensagem.vue'
+import Youtube from './components/Youtube.vue'
+import Arquivo from './components/Arquivo.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    Mensagem,
+    Youtube,
+    Arquivo
   }
 }
 </script>
