@@ -12,6 +12,11 @@ export default {
             nome: "Um nome qualquer",
             idade: 30
         }
+    },
+    methods: {
+        clicou() {
+            alert("Alerta de mensagem");
+        }
     }
 }
 </script>
