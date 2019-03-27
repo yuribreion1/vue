@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="this.idade < 32" v-on:click="clicou">
         <p class="nome-arquivo">{{ nome }}</p>
         <strong><p class="idade-arquivo"> {{ idade }}</p></strong>
     </div>
@@ -16,6 +16,7 @@ export default {
     methods: {
         clicou() {
             alert("Alerta de mensagem");
+            this.idade = this.idade + 1;
         }
     }
 }
