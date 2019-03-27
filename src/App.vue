@@ -5,6 +5,7 @@
     <Mensagem msg="Aqui é a minha propriedade"/>
     <Youtube url="https://player.vimeo.com/video/322667805"/>
     <Arquivo/>
+    <Altera/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import Mensagem from './components/Mensagem.vue'
 import Youtube from './components/Youtube.vue'
 import Arquivo from './components/Arquivo.vue'
+import Altera from './components/Altera.vue'
 
 export default {
   name: 'app',
@@ -20,7 +22,8 @@ export default {
     HelloWorld,
     Mensagem,
     Youtube,
-    Arquivo
+    Arquivo,
+    Altera
   }
 }
 </script>

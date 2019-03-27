@@ -2,6 +2,9 @@
     <div v-if="this.idade < 32" v-on:click="clicou">
         <p class="nome-arquivo">{{ nome }}</p>
         <strong><p class="idade-arquivo"> {{ idade }}</p></strong>
+        <div v-show="this.idade" > 30>
+            Maior que 30!
+    </div>
     </div>
 </template>
 
